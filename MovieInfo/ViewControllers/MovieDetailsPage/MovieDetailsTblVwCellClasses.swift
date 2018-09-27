@@ -18,6 +18,8 @@ class MovieDetailsImgCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        
+        //AHGSEIU FBAUYSEH FUIGASUIYE FIYASUYEH ASVEYU IHAVBE HABVSUIB TUYAWEFHIavwyefb uyawef asbviub agusebvfu aesyufaubefasebfuya yefvyua seuyfvaseh fyusegfsaeuyfsuyeh fisegiuf siuyfgyasuhfiuyageuh fauywheoia uyahf uwaguifwiufgasyeg fuasebfuy asgfygsf syfius fyusevfu se iufsiyhfoisehfafuwhyugwJEFUWEGHWJIUGWEF HWYHAPWEJHUYWGWRHYRHRUBIUAJOIGSUYHSI HIUSH
     }
     
     

@@ -17,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        sampleMetho()
         
+        //gfhhfghfghfg
         isServerRechable = false
         SSASwiftReachability.sharedManager?.startMonitoring()
         // MARK: Listen For Network Reachability Changes
@@ -67,6 +69,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+    func sampleMetho(){
+        
+        print("SampleMethod created")
+        
+    }
+    
+    
+    
+    
+    
 
 }
 

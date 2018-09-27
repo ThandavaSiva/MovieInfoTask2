@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("siva is bad boy")
         
         sampleMetho()
+//        dfgdgdsf
         
         isServerRechable = false
         SSASwiftReachability.sharedManager?.startMonitoring()

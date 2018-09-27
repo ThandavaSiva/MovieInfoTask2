@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        isServerRechable = false
+        SSASwiftReachability.sharedManager?.startMonitoring()
+        // MARK: Listen For Network Reachability Changes
+        NotificationCenter.default.addObserver(self, selector: #selector(self.reachabilityStatusChanged(notification:)), name: NSNotification.Name(rawValue: SSAReachabilityDidChangeNotification), object: nil)
+
+        
         return true
     }
 
@@ -39,6 +47,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    // MARK:- Reachability methods
+    
+    @objc func reachabilityStatusChanged(notification: NSNotification) {
+        if let info = notification.userInfo {
+            if let s = info[SSAReachabilityNotificationStatusItem] {
+                
+                let strStatus = (s as AnyObject).description
+                
+                if (strStatus ==  "notReachable" || strStatus == "unknown" ){
+                    
+                    isServerRechable = false
+                }
+                else{
+                    isServerRechable = true
+                }
+            }
+        }
     }
 
 

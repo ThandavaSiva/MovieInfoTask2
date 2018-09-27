@@ -7,7 +7,25 @@
 		<key>MovieInfo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>908187242104EE45009BABDC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>908187322104FE78009BABDC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>90907D8F2101CCFF00DD3B40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
